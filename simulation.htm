@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Impot Facile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Impot Facile</td></tr>
+</thead><tbody>
+<tr>
+<!-- annee en cours -->
+	<td>store</td>
+	<td>2014</td>
+	<td>year</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www3.finances.gouv.fr/calcul_impot/${year}/simplifie/index.htm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>droite</td>
+	<td></td>
+</tr>
+<tr>
+<!-- situation de famille (celibataire/union libre) -->
+	<td>click</td>
+	<td>document.form1.pre_situation_famille[2]</td>
+	<td></td>
+</tr>
+<tr>
+<!-- annee naissance 1er declarant -->
+	<td>type</td>
+	<td>name=0DA</td>
+	<td></td>
+</tr>
+<tr>
+<!-- annee naissance 2nd declarant -->
+	<td>type</td>
+	<td>name=0DB</td>
+	<td></td>
+</tr>
+<tr>
+<!-- nb enfant a charge -->
+	<td>type</td>
+	<td>name=0CF</td>
+	<td>1</td>
+</tr>
+<tr>
+<!-- annee naissance 1er enfant -->
+	<td>type</td>
+	<td>name=0F0</td>
+	<td>2008</td>
+</tr>
+<tr>
+<!-- annee naissance 2nd enfant -->
+	<td>type</td>
+	<td>name=0F1</td>
+	<td></td>
+</tr>
+<tr>
+<!-- annee naissance 3eme enfant -->
+	<td>type</td>
+	<td>name=0F2</td>
+	<td></td>
+</tr>
+<tr>
+<!-- annee naissance 4eme enfant -->
+	<td>type</td>
+	<td>name=0F3</td>
+	<td></td>
+</tr>
+<tr>
+<!-- annee naissance 5eme enfant -->
+	<td>type</td>
+	<td>name=0F4</td>
+	<td></td>
+</tr>
+<tr>
+<!-- revenu declarant 1 -->
+	<td>type</td>
+	<td>name=1AJ</td>
+	<td>11111</td>
+</tr>
+<tr>
+<!-- revenu declarant 2 -->
+	<td>type</td>
+	<td>name=1BJ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=1AX</td>
+	<td></td>
+</tr>
+<tr>
+<!-- voir case 2TR sur la page des impots -->
+	<td>type</td>
+	<td>name=2TR</td>
+	<td>111</td>
+</tr>
+<tr>
+<!-- voir case 2BH sur la page des impots -->
+	<td>type</td>
+	<td>name=2BH</td>
+	<td>111</td>
+</tr>
+<tr>
+<!-- frais de garde enfant 1 -->
+	<td>type</td>
+	<td>name=7GA</td>
+	<td>1111</td>
+</tr>
+<tr>
+<!-- frais de garde enfant 2 -->
+	<td>type</td>
+	<td>name=7GB</td>
+	<td></td>
+</tr>
+<tr>
+<!-- frais de garde enfant 3 -->
+	<td>type</td>
+	<td>name=7GC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[2]/table/tbody/tr/td[2]/a/img</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
